@@ -7,3 +7,11 @@ test_patterns = ["tests/*"]
   name = "python"
   enabled  = true
   dependency_file_paths = ["requirements.txt"]
+
+[[analyzers]]
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_path = "github.com/deepsourcelabs/july"
+  skip_doc_coverage = ["file"]
