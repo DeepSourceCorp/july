@@ -1,6 +1,9 @@
 import os
 import random
-import this
+import this  # noqa
+import sys  # noqa: F401
+from json import *
+from __future__ import absolute_import
 
 x = 1
 if x == 1:
@@ -8,8 +11,11 @@ if x == 1:
     print("x is 1.")
 
     
-def some_function():
-    print("this should raise a documentation related issue.")
+def some_function():  # pylint-disable
+    print(
+        "this should not raise a documentation related issue because it "
+        "is silenced."
+    )
 
 
 def some_other_function():
