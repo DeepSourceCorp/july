@@ -10,7 +10,7 @@ if x == 1:
     print("x is 1.")
 
     
-def some_function():  # pylint: disable=
+def some_function():  # pylint: disable=missing-docstring
     print(
         "this should not raise a documentation related issue because it "
         "is silenced."
