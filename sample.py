@@ -29,4 +29,4 @@ def dummy_function():
 
 def new_dummy_function():
     print('foobar')
-    raise NotImplemented  # skipcq: pyl-e0702
+    raise NotImplementedError  # skipcq: pyl-e0702

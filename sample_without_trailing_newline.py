@@ -33,4 +33,4 @@ def dummy_function():
 def new_dummy_function():
     print('foobar')
     # This is a comment, we test whether the next line gets highlighted
-    raise NotImplemented  # raise an issue here
+    raise NotImplementedError  # raise an issue here
